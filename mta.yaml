@@ -1,0 +1,14 @@
+ID: testbhf
+_schema-version: '2.1'
+version: 0.0.1
+
+modules:
+ - name: javatest1
+   type: java
+   path: javatest1
+   parameters:
+      memory: 1024M
+   provides:
+    - name: javatest1_api
+      properties:
+         url: ${default-url}
